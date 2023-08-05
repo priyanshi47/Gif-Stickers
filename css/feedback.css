@@ -1,0 +1,88 @@
+
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* margin: 2%; */
+    color: pink;
+    font-size: larger;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.submit{
+    all: unset;
+    background-color: purple;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    cursor: pointer;
+}
+.submitDiv{
+    display: flex;
+    justify-content: center;
+}
+.slider{
+    all: unset;
+    appearance: none;
+    width:70%;
+    height: 0.75rem;
+    cursor: pointer;
+    background-color: hsl(268, 47%, 21%);
+    border-radius: 1rem;
+
+    background-image: linear-gradient(hsl(285, 91%, 52%), hsl(285, 91%, 52%));
+
+}
+
+.slider::-webkit-slider-thumb {
+    position:relative;
+  
+    appearance: none;
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    background-color: hsl(52, 100%, 62%);
+    cursor:pointer;
+    margin-top: -3px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 229, 61, 0.50);
+    transition: all 100ms ease-in;
+}
+
+.slider:focus{
+    outline: 3px solid hsl(52, 100%, 62%);
+}
+
+.slider::-webkit-slider-thumb:hover{
+    outline: 2px solid hsl(52, 100%, 62%);
+    background-color: hsl(268, 75%, 9%);
+    box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.80);
+}
+
+.sliderDiv{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}

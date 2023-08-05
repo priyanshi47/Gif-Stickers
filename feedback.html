@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="shortcut icon" href="images/logo.gif" type="image/x-icon">
+    <title>Feedback</title>
+</head>
+<body>
+    <div class="image">
+        <a href="index.html"><img src="images/back.png" alt="" height="100px"></a>
+        <!-- <img src="images/login.png" alt="" height="300px" > -->
+      </div>
+    <h1>How was your experience?</h1>
+    <div class="rating">
+        <p>Bad</p>
+        <p>Average</p>
+        <p>Good</p>
+    </div>
+    <form action="index.html">
+    <div class="sliderDiv">
+        <input type="range" min="1" max="20" class="slider" step="1" >
+    </div>
+    <div class="submitDiv">
+        <button class="submit" onclick="submitHandler()">Submit</button>
+    </div>
+</form>
+    <script>
+        function submitHandler(){
+            alert("Thanks for your feedback!!");
+        }
+    </script>
+</body>
+</html>
